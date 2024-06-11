@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">Instagram</div>
+        <a href="index.html"><i class='bx bx-home'></i> Home</a>
+        <a href="#" id="search-btn"><i class='bx bx-search'></i> Search</a>
+        <a href="#"><i class='bx bx-compass'></i> Explore</a>
+        <a href="#"><i class='bx bx-movie'></i> Reels</a>
+        <a href="#"><i class='bx bx-envelope'></i> Messages</a>
+        <a href="#" id="notifications-btn"><i class='bx bx-heart'></i> Notifications</a>
+        <a href="#"><i class='bx bx-plus-circle'></i> Create</a>
+        <a href="profile.html"><i class='bx bx-user'></i> Profile</a>
+        <a href="#" id="more-btn"><i class='bx bx-menu'></i> More</a>
+    </div>
+    
+    <div class="more-menu" id="more-menu">
+        <a href="#"><i class='bx bx-cog'></i> Settings</a>
+        <a href="#"><i class='bx bx-time'></i> Your activity</a>
+        <a href="#"><i class='bx bx-bookmark'></i> Saved</a>
+        <a href="#"><i class='bx bx-moon'></i> Switch appearance</a>
+        <a href="#"><i class='bx bx-error'></i> Report a problem</a>
+        <hr>
+        <a href="#"><i class='bx bx-message-rounded'></i> Threads</a>
+        <a href="#"><i class='bx bx-refresh'></i> Switch accounts</a>
+        <a href="#"><i class='bx bx-log-out'></i> Log out</a>
+    </div>
+
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </div>
+
+    <div id="notifications-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Notifications</h2>
+            <ul class="notifications-list">
+                <li>Notification 1</li>
+                <li>Notification 2</li>
+                <li>Notification 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar2">
+        <div class="profile">
+            <img src="./home-img.jpg" alt="Profile Picture">
+            <div>
+                <span>abdullah_reda67</span>
+                <span>Abdullah Reda</span>
+                <a href="#" style="color: #0095f6; text-decoration: none;">Switch</a>
+            </div>
+        </div>
+        <div class="suggested">
+            <div class="header">
+                <span>Suggested for you</span>
+                <a href="#">See All</a>
+            </div>
+            <div class="user">
+                <img src=".//pro1.jpg" alt="User Picture">
+                <div>
+                    <span>lzrylqbd</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro3.jpg" alt="User Picture">
+                <div>
+                    <span>raghib2632</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro3.jpg" alt="User Picture">
+                <div>
+                    <span>amanymahmoud540</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro4.jpg" alt="User Picture">
+                <div>
+                    <span>rah_ma4660</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro5.jpg" alt="User Picture">
+                <div>
+                    <span>m_elhawe</span>
+                    <span style="color: #777;">Followed by amir_magdy01033</span>
+                </div>
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Press</a>
+            <a href="#">API</a>
+            <a href="#">Jobs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Language</a>
+            <a href="#">Meta Verified</a>
+            <p>© 2024 INSTAGRAM FROM META</p>
+        </div>
+    </div>
+
+
+    <div class="collection">
+
+
+        <div class="story-slider" id="story-slider">
+            <div class="story">
+                <div class="add-story">
+                    <img src="https://via.placeholder.com/70" alt="Profile Picture">
+                    <input type="file" accept="image/*" id="fileInput">
+                </div>
+                <span>Your Story</span>
+            </div>
+            <!-- Existing stories -->
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story.jpg" alt="Story 1">
+                </div>
+                <span>khaled_78y</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story2.jpg" alt="Story 2">
+                </div>
+                <span>fahmey_99</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story3.jpg" alt="Story 2">
+                </div>
+                <span>emadahmed34</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story4.jpg" alt="Story 2">
+                </div>
+                <span>ali_samy34</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story5.jpg" alt="Story 2">
+                </div>
+                <span>mohammed_wahed32</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story6.jpg" alt="Story 2">
+                </div>
+                <span>ahmed_hamed35</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story7.jpg" alt="Story 2">
+                </div>
+                <span>hamed35</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story8.jpg" alt="Story 2">
+                </div>
+                <span>noor_89</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story9.jpg" alt="Story 2">
+                </div>
+                <span>osman_khalil</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story10.jpg" alt="Story 2">
+                </div>
+                <span>jackson_46</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story11.jpg" alt="Story 2">
+                </div>
+                <span>smith44</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story12.jpg" alt="Story 2">
+                </div>
+                <span>haneen_ytu87</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story13.jpg" alt="Story 2">
+                </div>
+                <span>monika_97</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story14.jpg" alt="Story 2">
+                </div>
+                <span>alora_smith34</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story15.jpg" alt="Story 2">
+                </div>
+                <span>sara_gh45</span>
+            </div>
+          
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story.jpg" alt="Story 1">
+                </div>
+                <span>jan34</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story2.jpg" alt="Story 2">
+                </div>
+                <span>yousef44</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story3.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story4.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story5.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story6.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story7.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story8.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story9.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story10.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story11.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story12.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story13.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story14.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story15.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+          
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story.jpg" alt="Story 1">
+                </div>
+                <span>User 1</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story2.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story3.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story4.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story5.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story6.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story7.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story8.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story9.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story10.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story11.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story12.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story13.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story14.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+            <div class="story">
+                <div class="story-inner">
+                    <img src="./story15.jpg" alt="Story 2">
+                </div>
+                <span>User 2</span>
+            </div>
+          
+           
+          
+        </div>
+ 
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./home-img.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">abdullah_reda67</span>
+            </div>
+            <img src="./post1.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">khaled_78y</span>
+            </div>
+            <img src="./post2.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story2.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">alosh84</span>
+            </div>
+            <img src="./post3.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story3.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">samy_12</span>
+            </div>
+            <img src="./post4.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story4.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">sameh76</span>
+            </div>
+            <img src="./post5.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story5.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">tawfikmohammed89</span>
+            </div>
+            <img src="./post6.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story6.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">abdullah_88</span>
+            </div>
+            <img src="./post7.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+        
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story7.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">mohsen_saad64</span>
+            </div>
+            <img src="./post8.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story8.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">goora_65</span>
+            </div>
+            <img src="./post9.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story9.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">rewan_ahmed</span>
+            </div>
+            <img src="./post10.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story10.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">wahed89</span>
+            </div>
+            <img src="./post11.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story11.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">ahmed54</span>
+            </div>
+            <img src="./post12.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story12.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">ali_mohsen</span>
+            </div>
+            <img src="./post13.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story13.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">osman367-mo</span>
+            </div>
+            <img src="./post14.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="instagram-post">
+            <div class="header">
+                <img src="./story14.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="username">mohamed36</span>
+            </div>
+            <img src="./post15.jpg" alt="Post Image" class="post-image">
+            <div class="actions">
+                <i class="bx bx-heart"></i>
+                <i class="bx bx-comment"></i>
+                <i class="bx bx-send"></i>
+            </div>
+            <div class="likes">Liked by <span class="bold">mr.se03</span> and others</div>
+            <div class="comments">
+                <span class="bold">View all 15 comments</span>
+                <ul id="comments-list">
+                </ul>
+            </div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment..." />
+                <button id="post-button">Post</button>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

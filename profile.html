@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Sidebar</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <div class="logo">Instagram</div>
+        <a href="index.html"><i class='bx bx-home'></i> Home</a>
+        <a href="#" id="search-btn"><i class='bx bx-search'></i> Search</a>
+        <a href="#"><i class='bx bx-compass'></i> Explore</a>
+        <a href="#"><i class='bx bx-movie'></i> Reels</a>
+        <a href="#"><i class='bx bx-envelope'></i> Messages</a>
+        <a href="#" id="notifications-btn"><i class='bx bx-heart'></i> Notifications</a>
+        <a href="#"><i class='bx bx-plus-circle'></i> Create</a>
+        <a href="profile.html"><i class='bx bx-user'></i> Profile</a>
+        <a href="#" id="more-btn"><i class='bx bx-menu'></i> More</a>
+    </div>
+    
+    <div class="more-menu" id="more-menu">
+        <a href="#"><i class='bx bx-cog'></i> Settings</a>
+        <a href="#"><i class='bx bx-time'></i> Your activity</a>
+        <a href="#"><i class='bx bx-bookmark'></i> Saved</a>
+        <a href="#"><i class='bx bx-moon'></i> Switch appearance</a>
+        <a href="#"><i class='bx bx-error'></i> Report a problem</a>
+        <hr>
+        <a href="#"><i class='bx bx-message-rounded'></i> Threads</a>
+        <a href="#"><i class='bx bx-refresh'></i> Switch accounts</a>
+        <a href="#"><i class='bx bx-log-out'></i> Log out</a>
+    </div>
+
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </div>
+
+    <div id="notifications-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Notifications</h2>
+            <ul class="notifications-list">
+                <li>Notification 1</li>
+                <li>Notification 2</li>
+                <li>Notification 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar2">
+        <div class="profile">
+            <img src="./home-img.jpg" alt="Profile Picture">
+            <div>
+                <span>abdullah_reda67</span>
+                <span>Abdullah Reda</span>
+                <a href="#" style="color: #0095f6; text-decoration: none;">Switch</a>
+            </div>
+        </div>
+        <div class="suggested">
+            <div class="header">
+                <span>Suggested for you</span>
+                <a href="#">See All</a>
+            </div>
+            <div class="user">
+                <img src="./pro1.jpg" alt="User Picture">
+                <div>
+                    <span>lzrylqbd</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro3.jpg" alt="User Picture">
+                <div>
+                    <span>raghib2632</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro3.jpg" alt="User Picture">
+                <div>
+                    <span>amanymahmoud540</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro4.jpg" alt="User Picture">
+                <div>
+                    <span>rah_ma4660</span>
+                    <span style="color: #777;">New to Instagram</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <div class="user">
+                <img src="./pro5.jpg" alt="User Picture">
+                <div>
+                    <span>m_elhawe</span>
+                    <span style="color: #777;">Followed by amir_magdy01033</span>
+                </div>
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Press</a>
+            <a href="#">API</a>
+            <a href="#">Jobs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Language</a>
+            <a href="#">Meta Verified</a>
+            <p>© 2024 INSTAGRAM FROM META</p>
+        </div>
+    </div>
+
+
+    <div class="collection">
+
+
+        <div class="profile-container">
+            <div class="profile-header2">
+                <img src="./home-img.jpg" alt="Profile Picture" class="profile-pic2">
+                <div class="profile-info">
+                    <div class="profile-username">
+                        <h2>abdullah_reda67</h2>
+                        <button>Edit profile</button>
+                        <button>View archive</button>
+                        <i class='bx bx-cog'></i>
+                    </div>
+                    <div class="profile-stats">
+                        <span>4 posts</span>
+                        <span>391 followers</span>
+                        <span>864 following</span>
+                    </div>
+                    <div class="profile-bio">
+                        <p><strong>Abdullah Reda</strong></p>
+                        <p>Under cyber security education</p>
+                        <p>programer 🎭💻</p>
+                        <p>front-end developer</p>
+                        <p>If I had known my ringtone, I would not have started.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="highlights">
+                <div class="highlight-item">
+                    <img src="./post4.jpg" alt="Highlight">
+                    <span>Highlights</span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post12.jpg" alt="Highlight">
+                    <span>code</span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post15.jpg" alt="Highlight">
+                    <span>Highlights</span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post3.jpg" alt="Highlight">
+                    <span><1></span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post7.jpg" alt="Highlight">
+                    <span>Highlights</span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post11.jpg" alt="Highlight">
+                    <span>Highlights</span>
+                </div>
+                <div class="highlight-item">
+                    <img src="./post10.jpg" alt="Highlight">
+                    <span>New</span>
+                </div>
+            </div>
+            <div class="profile-nav">
+                <span>POSTS</span>
+                <span>REELS</span>
+                <span class="active">SAVED</span>
+                <span>TAGGED</span>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
